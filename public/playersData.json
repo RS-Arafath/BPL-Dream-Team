@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "playerName": "Virat Kohli",
+    "playerCountry": "India",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.5,
+    "bowlingStyle": "Right-arm medium",
+    "price": 1500000,
+    "playerImg": "https://i.ibb.co.com/chP3c2M4/image.png"
+  },
+  {
+    "id": 2,
+    "playerName": "Joe Root",
+    "playerCountry": "England",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.2,
+    "bowlingStyle": "Right-arm off break",
+    "price": 1400000,
+    "playerImg": "https://i.ibb.co.com/R4QYNT3n/image.png"
+  },
+  {
+    "id": 3,
+    "playerName": "Babar Azam",
+    "playerCountry": "Pakistan",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.3,
+    "bowlingStyle": "Right-arm off break",
+    "price": 1300000,
+    "playerImg": "https://i.ibb.co.com/v6XXb9xs/image.png"
+  },
+  {
+    "id": 4,
+    "playerName": "Ben Stokes",
+    "playerCountry": "England",
+    "playerType": "All-rounder",
+    "battingStyle": "Left-hand bat",
+    "rating": 9.0,
+    "bowlingStyle": "Right-arm fast medium",
+    "price": 1450000,
+    "playerImg": "https://i.ibb.co.com/8LHYGKhT/image.png"
+  },
+  {
+    "id": 5,
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerType": "All-rounder",
+    "battingStyle": "Left-hand bat",
+    "rating": 9.1,
+    "bowlingStyle": "Left-arm orthodox",
+    "price": 1200000,
+    "playerImg": "https://i.ibb.co.com/vSK9N9v/image.png"
+  },
+  {
+    "id": 6,
+    "playerName": "Kane Williamson",
+    "playerCountry": "New Zealand",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.4,
+    "bowlingStyle": "Right-arm off break",
+    "price": 1350000,
+    "playerImg": "https://i.ibb.co.com/LB7MTKS/image.png"
+  },
+  {
+    "id": 7,
+    "playerName": "Steve Smith",
+    "playerCountry": "Australia",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.3,
+    "bowlingStyle": "Right-arm leg break",
+    "price": 1380000,
+    "playerImg": "https://i.ibb.co.com/gFcCvwCP/image.png"
+  },
+  {
+    "id": 8,
+    "playerName": "Rashid Khan",
+    "playerCountry": "Afghanistan",
+    "playerType": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.2,
+    "bowlingStyle": "Right-arm leg break",
+    "price": 1250000,
+    "playerImg": "https://i.ibb.co.com/zhBtMh7m/image.png"
+  },
+  {
+    "id": 9,
+    "playerName": "Jasprit Bumrah",
+    "playerCountry": "India",
+    "playerType": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.4,
+    "bowlingStyle": "Right-arm fast",
+    "price": 1420000,
+    "playerImg": "https://i.ibb.co.com/hJfhd38H/image.png"
+  },
+  {
+    "id": 10,
+    "playerName": "Trent Boult",
+    "playerCountry": "New Zealand",
+    "playerType": "Bowler",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.1,
+    "bowlingStyle": "Left-arm fast medium",
+    "price": 1280000,
+    "playerImg": "https://i.ibb.co.com/yF3Q8LN7/image.png"
+  },
+  {
+    "id": 11,
+    "playerName": "David Warner",
+    "playerCountry": "Australia",
+    "playerType": "Batsman",
+    "battingStyle": "Left-hand bat",
+    "rating": 9.0,
+    "bowlingStyle": "Right-arm leg break",
+    "price": 1320000,
+    "playerImg": "https://i.ibb.co.com/n8Y6Xfkp/image.png"
+  },
+  {
+    "id": 12,
+    "playerName": "Rohit Sharma",
+    "playerCountry": "India",
+    "playerType": "Batsman",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.3,
+    "bowlingStyle": "Right-arm off break",
+    "price": 1370000,
+    "playerImg": "https://i.ibb.co.com/vvjThsFr/image.png"
+  },
+  {
+    "id": 13,
+    "playerName": "Hardik Pandya",
+    "playerCountry": "India",
+    "playerType": "All-rounder",
+    "battingStyle": "Right-hand bat",
+    "rating": 8.9,
+    "bowlingStyle": "Right-arm fast medium",
+    "price": 1340000,
+    "playerImg": "https://i.ibb.co.com/XG6sg48/image.png"
+  },
+  {
+    "id": 14,
+    "playerName": "Andre Russell",
+    "playerCountry": "West Indies",
+    "playerType": "All-rounder",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.0,
+    "bowlingStyle": "Right-arm fast",
+    "price": 1360000,
+    "playerImg": "https://i.ibb.co.com/mV8W4HqQ/image.png"
+  },
+  {
+    "id": 15,
+    "playerName": "Jos Buttler",
+    "playerCountry": "England",
+    "playerType": "Wicketkeeper",
+    "battingStyle": "Right-hand bat",
+    "rating": 9.2,
+    "bowlingStyle": "None",
+    "price": 1390000,
+    "playerImg": "https://i.ibb.co.com/cWjF96J/image.png"
+  },
+  {
+    "id": 16,
+    "playerName": "Quinton de Kock",
+    "playerCountry": "South Africa",
+    "playerType": "Wicketkeeper",
+    "battingStyle": "Left-hand bat",
+    "rating": 9.1,
+    "bowlingStyle": "None",
+    "price": 1310000,
+    "playerImg": "https://i.ibb.co.com/Rp7Zc7zw/image.png"
+  },
+  {
+    "id": 17,
+    "playerName": "Kagiso Rabada",
+    "playerCountry": "South Africa",
+    "playerType": "Bowler",
+    "battingStyle": "Left-hand bat",
+    "rating": 9.2,
+    "bowlingStyle": "Right-arm fast",
+    "price": 1330000,
+    "playerImg": "https://i.ibb.co.com/kgRn4vy1/image.png"
+  },
+  {
+    "id": 18,
+    "playerName": "Mitchell Starc",
+    "playerCountry": "Australia",
+    "playerType": "Bowler",
+    "battingStyle": "Left-hand bat",
+    "rating": 9.3,
+    "bowlingStyle": "Left-arm fast",
+    "price": 1410000,
+    "playerImg": "https://i.ibb.co.com/gZ2FMjb0/image.png"
+  },
+  {
+    "id": 19,
+    "playerName": "Glenn Maxwell",
+    "playerCountry": "Australia",
+    "playerType": "All-rounder",
+    "battingStyle": "Right-hand bat",
+    "rating": 8.8,
+    "bowlingStyle": "Right-arm off break",
+    "price": 1290000,
+    "playerImg": "https://i.ibb.co.com/MyXDTV4c/image.png"
+  },
+  {
+    "id": 20,
+    "playerName": "Mushfiqur Rahim",
+    "playerCountry": "Bangladesh",
+    "playerType": "Wicketkeeper",
+    "battingStyle": "Right-hand bat",
+    "rating": 8.9,
+    "bowlingStyle": "None",
+    "price": 1150000,
+    "playerImg": "https://i.ibb.co.com/HfwvydZP/image.png"
+  }
+]
