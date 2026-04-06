@@ -1,13 +1,14 @@
 import React, { use } from 'react';
+import AvailaablePlayers from '../HomePage/banner/availablePlayers/AvailaablePlayers';
 
 const Players = ({ playersPromise }) => {
-  const data=use(playersPromise)
-  console.log(data);
+  const players=use(playersPromise)
+  
   return (
-    <div>
-      <h1>{data.length}</h1>
+    <div className='container mx-auto'>
+      <AvailaablePlayers players={players}></AvailaablePlayers>
     </div>
-  )
+  );
 };
 
 export default Players;

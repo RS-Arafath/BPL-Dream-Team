@@ -1,0 +1,18 @@
+import React from 'react';
+import { FaUser } from 'react-icons/fa';
+import { FaFlag } from 'react-icons/fa';
+import Card from '../../../ui/Card';
+
+const AvailaablePlayers = ({ players }) => {
+  return (
+    <div className=" mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mx-auto place-items-center ">
+      {players.map((player) => {
+        return (
+         <Card player={player}></Card>
+        );
+      })}
+    </div>
+  );
+};
+
+export default AvailaablePlayers;

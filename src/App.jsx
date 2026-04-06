@@ -16,7 +16,11 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Suspense
-        fallback={<span className="loading loading-dots loading-lg"></span>}
+        fallback={
+          <div className='flex flex-row justify-center items-center m-20'>
+            <span className="loading loading-dots loading-lg"></span>
+          </div>
+        }
       >
         <Players playersPromise={playersPromise}></Players>
       </Suspense>
