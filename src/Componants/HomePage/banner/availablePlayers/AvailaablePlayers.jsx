@@ -5,7 +5,7 @@ import Card from '../../../ui/Card';
 
 const AvailaablePlayers = ({ players }) => {
   return (
-    <div className=" mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mx-auto place-items-center ">
+    <div className=" mt-8 mx-auto containermt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7  place-items-center ">
       {players.map((player) => {
         return (
          <Card player={player}></Card>
