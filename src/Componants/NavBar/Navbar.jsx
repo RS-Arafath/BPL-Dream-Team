@@ -8,7 +8,7 @@ const Navbar = () => {
       </div>
       <div className="flex-none">
         <button className="  btn text-xl flex justify-between items-center gap-2 font-bold">
-          0 Coins 
+          {} Coins 
           <img src={dollerImg} alt="currency" />
           
         </button>

@@ -16,10 +16,10 @@ const Players = ({ playersPromise }) => {
           </h2>
         ) : (
           <h2 className="font-bold text-3xl">
-            Selected Players: {}
+            Selected Players:(20/11)
           </h2>
         )}
-        ;
+        
         <div>
           <button
             onClick={() => {

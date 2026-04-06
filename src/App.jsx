@@ -18,7 +18,7 @@ function App() {
       <Suspense
         fallback={
           <div className='flex flex-row justify-center items-center m-20'>
-            <span className="loading loading-dots loading-lg"></span>
+            <span className=" loading loading-dots loading-lg"></span>
           </div>
         }
       >
