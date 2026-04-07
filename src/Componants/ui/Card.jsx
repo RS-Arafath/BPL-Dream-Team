@@ -1,9 +1,28 @@
 import React, { useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { FaFlag } from 'react-icons/fa';
-
-const Card = ({ player }) => {
+const Card = ({ player, setCoin, coin }) => {
   const [isSelected, setIsSelected] = useState(false);
+  const handleChosePlayer = () => {
+    if (coin >= player.price) {
+      setCoin((prevCoin) => prevCoin - player.price); // safe subtraction
+    } else {
+      alert(`Balance low: ${coin} You didn't Buy Players`);
+      return;
+    }
+    alert(`${player.playerName} is Selected`);
+    setIsSelected('true');
+
+    // let newCoin = player.price;
+    // if (newCoin >= player.price) {
+    //   setCoin(coin - player.price);
+    // } else {
+    //   alert(`Blance low ${coin}`)
+    // }
+
+    
+  };
+
   return (
     <div className="container mx-auto">
       <div className="card  bg-base-100  shadow-sm">
@@ -42,7 +61,7 @@ const Card = ({ player }) => {
 
             <button
               className="btn  btn-success text-black btn-outline font-bold"
-              onClick={() => setIsSelected('true')}
+              onClick={handleChosePlayer}
               disabled={isSelected}
             >
               {isSelected ? 'Selected' : 'Choose Player'}

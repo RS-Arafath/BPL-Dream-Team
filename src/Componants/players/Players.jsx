@@ -2,24 +2,21 @@ import React, { use, useState } from 'react';
 import AvailaablePlayers from '../HomePage/banner/availablePlayers/AvailaablePlayers';
 import SelectedPlayers from '../HomePage/SelectedPlayers/SelectedPlayers';
 
-const Players = ({ playersPromise }) => {
+const Players = ({ playersPromise, setCoin,coin }) => {
   const players = use(playersPromise);
-  const [selectedType,setSelectedType]=useState('available')
+  const [selectedType, setSelectedType] = useState('available');
 
   return (
     <div className="container mx-auto">
       <div className="flex justify-between gap-4 items-center">
-        {
-          selectedType === 'available' ? (
+        {selectedType === 'available' ? (
           <h2 className="font-bold text-3xl">
             Available Players: {players.length}
           </h2>
         ) : (
-          <h2 className="font-bold text-3xl">
-            Selected Players:(20/11)
-          </h2>
+          <h2 className="font-bold text-3xl">Selected Players:(20/11)</h2>
         )}
-        
+
         <div>
           <button
             onClick={() => {
@@ -39,7 +36,15 @@ const Players = ({ playersPromise }) => {
           </button>
         </div>
       </div>
-      {selectedType==='available' ?  <AvailaablePlayers players={players}></AvailaablePlayers> : <SelectedPlayers></SelectedPlayers>}
+      {selectedType === 'available' ? (
+        <AvailaablePlayers
+          players={players}
+          setCoin={setCoin}
+          coin={coin}
+        ></AvailaablePlayers>
+      ) : (
+        <SelectedPlayers></SelectedPlayers>
+      )}
     </div>
   );
 };
