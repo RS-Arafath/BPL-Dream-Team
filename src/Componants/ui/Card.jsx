@@ -13,12 +13,7 @@ const Card = ({ player, setCoin, coin }) => {
     alert(`${player.playerName} is Selected`);
     setIsSelected('true');
 
-    // let newCoin = player.price;
-    // if (newCoin >= player.price) {
-    //   setCoin(coin - player.price);
-    // } else {
-    //   alert(`Blance low ${coin}`)
-    // }
+   
 
     
   };
