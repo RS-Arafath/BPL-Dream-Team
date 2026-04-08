@@ -12,10 +12,6 @@ const Card = ({ player, setCoin, coin }) => {
     }
     alert(`${player.playerName} is Selected`);
     setIsSelected('true');
-
-   
-
-    
   };
 
   return (
@@ -28,6 +24,7 @@ const Card = ({ player, setCoin, coin }) => {
           <h2 className="card-title font-bold text-[22px]">
             <FaUser />
             {player.playerName}
+            player
           </h2>
           <div className="flex justify-between">
             <div className="flex gap-1 items-center font-lg">
