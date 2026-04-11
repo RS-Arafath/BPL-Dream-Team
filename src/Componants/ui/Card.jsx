@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { FaFlag } from 'react-icons/fa';
-const Card = ({ player, setCoin, coin }) => {
+const Card = ({
+  player,
+  setCoin,
+  coin,
+  selectedPlayers,
+  setSelectedPlayers,
+}) => {
   const [isSelected, setIsSelected] = useState(false);
   const handleChosePlayer = () => {
     if (coin >= player.price) {
@@ -12,6 +18,7 @@ const Card = ({ player, setCoin, coin }) => {
     }
     alert(`${player.playerName} is Selected`);
     setIsSelected('true');
+    setSelectedPlayers([...selectedPlayers, player]);
   };
 
   return (
@@ -24,7 +31,6 @@ const Card = ({ player, setCoin, coin }) => {
           <h2 className="card-title font-bold text-[22px]">
             <FaUser />
             {player.playerName}
-           my name is arafath
           </h2>
           <div className="flex justify-between">
             <div className="flex gap-1 items-center font-lg">
