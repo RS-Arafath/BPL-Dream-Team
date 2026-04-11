@@ -18,7 +18,9 @@ const Players = ({ playersPromise, setCoin,coin }) => {
             Available Players: {players.length}
           </h2>
         ) : (
-          <h2 className="font-bold text-3xl">Selected Players:(20/11)</h2>
+          <h2 className="font-bold text-3xl">
+            Selected Players:({selectedPlayers.length}/{players.length})
+          </h2>
         )}
 
         <div>
@@ -36,7 +38,7 @@ const Players = ({ playersPromise, setCoin,coin }) => {
             }}
             className={`btn ${selectedType === 'selected' ? 'bg-[#e7fe29] font-bold' : ''} rounded-l-none rounded-r-xl `}
           >
-            Selected (0)
+            Selected ({selectedPlayers.length})
           </button>
         </div>
       </div>
@@ -49,7 +51,10 @@ const Players = ({ playersPromise, setCoin,coin }) => {
           selectedPlayers={selectedPlayers}
         ></AvailaablePlayers>
       ) : (
-        <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+        <SelectedPlayers
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
+        ></SelectedPlayers>
       )}
     </div>
   );
