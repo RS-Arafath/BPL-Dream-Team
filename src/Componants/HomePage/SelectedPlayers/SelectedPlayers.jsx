@@ -4,9 +4,13 @@ import { MdDeleteForever } from 'react-icons/md';
 import { FaUser } from 'react-icons/fa';
 const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers }) => {
   const handleDeleteSelectedPlayes = (player) => {
-    console.log(player, 'player');
-    const filterPlayers=selectedPlayers.filter
+    console.log(selectedPlayers, 'selectedplayer');
+    const filterPlayers = selectedPlayers.filter(
+      (selectedPlayer) => selectedPlayer.playerName !== player.playerName,
+    );
+    setSelectedPlayers(filterPlayers)
   };
+
   return (
     <div>
       {selectedPlayers.map((player, ind) => {
