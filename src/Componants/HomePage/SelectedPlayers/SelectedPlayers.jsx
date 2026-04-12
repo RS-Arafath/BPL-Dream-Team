@@ -2,13 +2,19 @@ import React from 'react';
 import Players from '../../players/Players';
 import { MdDeleteForever } from 'react-icons/md';
 import { FaUser } from 'react-icons/fa';
-const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers }) => {
+const SelectedPlayers = ({
+  selectedPlayers,
+  setSelectedPlayers,
+  setCoin,
+  coin,
+}) => {
   const handleDeleteSelectedPlayes = (player) => {
     console.log(selectedPlayers, 'selectedplayer');
     const filterPlayers = selectedPlayers.filter(
       (selectedPlayer) => selectedPlayer.playerName !== player.playerName,
     );
-    setSelectedPlayers(filterPlayers)
+    setSelectedPlayers(filterPlayers);
+    setCoin(coin + player.price);
   };
 
   return (

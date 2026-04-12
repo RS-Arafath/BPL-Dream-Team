@@ -1,13 +1,12 @@
 import React, { use, useState } from 'react';
 import AvailaablePlayers from '../HomePage/banner/availablePlayers/AvailaablePlayers';
-import SelectedPlayers from '../HomePage/SelectedPlayers/SelectedPlayers';  
+import SelectedPlayers from '../HomePage/SelectedPlayers/SelectedPlayers';
 
-
-const Players = ({ playersPromise, setCoin,coin }) => {
+const Players = ({ playersPromise, setCoin, coin }) => {
   const players = use(playersPromise);
   const [selectedType, setSelectedType] = useState('available');
 
-  // for selected players 
+  // for selected players
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
   return (
@@ -54,6 +53,8 @@ const Players = ({ playersPromise, setCoin,coin }) => {
         <SelectedPlayers
           selectedPlayers={selectedPlayers}
           setSelectedPlayers={setSelectedPlayers}
+          setCoin={setCoin}
+          coin={coin}
         ></SelectedPlayers>
       )}
     </div>
