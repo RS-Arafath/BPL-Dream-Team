@@ -14,7 +14,7 @@ function App() {
 
   // nav coin managment
 
-  const [coin, setCoin] = useState(1870000);
+  const [coin, setCoin] = useState(15370000);
 
   return (
     <>
