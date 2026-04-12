@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaUser } from 'react-icons/fa';
 import { FaFlag } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 const Card = ({
   player,
   setCoin,
@@ -13,10 +14,30 @@ const Card = ({
     if (coin >= player.price) {
       setCoin((prevCoin) => prevCoin - player.price); // safe subtraction
     } else {
-      alert(`Balance low: ${coin} You didn't Buy Players`);
+      toast.error('Your Blance is Low', {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: 'light',
+      });
       return;
     }
-    alert(`${player.playerName} is Selected`);
+   
+    toast.success('Player add to Cart!', {
+position: "top-right",
+autoClose: 3000,
+hideProgressBar: false,
+closeOnClick: true,
+pauseOnHover:false,
+draggable: false,
+progress: undefined,
+      theme: "light",
+
+});
     setIsSelected('true');
     setSelectedPlayers([...selectedPlayers, player]);
   };
